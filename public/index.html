@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rep-Flow — Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-brand">
+        <div class="logo-mark">RF</div>
+        <h1>Rep-Flow</h1>
+        <div class="tagline">From Service Request to Successful Delivery.</div>
+      </div>
+
+      <div class="role-tabs" id="roleTabs">
+        <button type="button" data-role="admin" class="active">Admin</button>
+        <button type="button" data-role="staff">Staff</button>
+        <button type="button" data-role="technician">Technician</button>
+      </div>
+
+      <div class="auth-error" id="loginError"></div>
+
+      <form id="loginForm">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="email" required placeholder="you@repflow.com">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="password" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="loginBtn">Log in</button>
+      </form>
+
+      <div class="demo-hint" id="demoHint">
+        Demo credentials (created via <code>npm run seed</code>):<br>
+        <b>Admin:</b> admin@repflow.com / Admin@123
+      </div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
