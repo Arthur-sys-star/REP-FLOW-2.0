@@ -1,10 +1,21 @@
-node_modules/
+# Environment variables
 .env
 .env.*
 !.env.example
 
-uploads/
-*.log
+# Node dependencies
+node_modules/
 
+# Logs
+*.log
+npm-debug.log*
+
+# Uploaded files
+public/uploads/
+
+# Operating system files
 .DS_Store
 Thumbs.db
+
+# VS Code
+.vscode/
